@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+	<head>
+		<title>Site</title>
+		<meta charset="utf-8" />
+        <meta name="description" content="Aqui fica a descrição">
+        <meta name="keywords" content="HTML,CSS,JSON,JavaScript">
+        <meta name="author" content="Eu mesmo">
+		<meta
+            name="viewport" 
+            content="
+			width=device-width, 
+			user-scalable=no, 
+			initial-scale=1, 
+			maximum-scale=1" />
+			
+			<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css" media="all">
+	</head>
+	<body>
+
+        <div class="container">
+
+            <div class="row">
+                
+                    <div class="form-group">
+                        <label for="dtInicial">Data Inicial</label>
+                        <input type="date" class="form-control" id="dtInicial">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dtFinal">Data Final</label>
+                        <input type="date" class="form-control" id="dtFinal">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" id="nome">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="descricao">Descrição</label>
+                        <textarea class="form-control" id="descricao"></textarea>                        
+                    </div>
+
+                    <div class="form-group">                        
+                        <button type="button" class="btn btn-primary" id="gravar">Gravar tarefa</button>
+                    </div>
+                
+            </div>
+
+            <div>
+                <table id="tarefas" class="table table-striped table-responsive">
+                    <tbody>
+                    <tr>
+                        <th><input type="checkbox" id="marcarTodos"></th>
+                        <th>Nome</th>
+                        <th>Data Inicial</th>
+                        <th>Data Final</th>
+                        <th>Descrição da Tarefa</th>
+                    </tr>
+                    </tbody>
+                </table>
+                <button id="btnRemover" class="btn btn-warning">Remover selecionados</button>
+            </div>
+
+        </div>
+	
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/site.js"></script>
+	</body>
+</html>
